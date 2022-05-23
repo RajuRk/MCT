@@ -65,7 +65,7 @@ p{
     color: #282727;
 }
 .email-phone p i{
-    background-color: #a8c043;
+    background-color: #009adb;
     color: #fff;
     padding: 3px;
     width: 25px;
@@ -142,7 +142,7 @@ p{
     }
 }
 .banner-img{
-    background-image: url(img/banner.jpg);
+    background-image: url(img/rtc-1-min.jpg);
     position: absolute;
     top: 0;
     right: 0;
@@ -176,7 +176,7 @@ p{
 }
 @media (max-width: 1450px){
     .banner-img {
-        right: -30%;
+        right: -32%;
     }
 }
 @media (max-width: 1670px){
@@ -213,13 +213,14 @@ p{
     margin-bottom: 15px;
 }
 .banner_one-content h4{
-    font-size: 20px;
+    font-size: 22px;
 }
 .form-sec{
     max-width: 400px;
     margin: 0 auto;
     background-color: hsl(0deg 0% 31% / 52%);
-    padding: 5px 15px;
+    padding: 15px 25px;
+    border-radius: 15px;
 }
 .form-control{
     margin-bottom: 8px;
@@ -312,12 +313,12 @@ p{
     justify-content: center;
 }
 .card-list .card{
-    width: 100%;
-    max-width: 330px;
+    /* width: 100%; */
+    max-width: 350px;
     margin: 30px 5px;
     border: 1px solid #dddddd;
     padding: 5px 10px;
-    text-align: center;
+    text-align: justify;
     position: relative;
     box-shadow: 0px 0px 12px 4px #dfdfdf;
     border-radius: 3px;
@@ -336,9 +337,10 @@ p{
     justify-content: center;
     border-radius: 50%;
 }
-.card-content,{
+.card-content{
     margin-top: 30px;
 }
+
 .card-content h3{
     height: 65px;
     display: flex;
@@ -380,10 +382,95 @@ p{
 }
 .footer-sec{
     text-align: center;
-    background-color: #919191;
-    color: #fff;
     padding: 5px;
+    border-top: 1px solid #dfdfdf;
 }
 .about-content p{
     text-align: justify;
+}
+
+@media only screen and (max-width: 600px){
+    .banner-img:before{
+        background-image: linear-gradient(120deg, #d5d5d5 0%, #3c3c3c 100%);
+    }
+    #header{
+        height: auto;
+        border-bottom: none;
+    }
+    .header-sec{
+        flex-direction: column;
+        height: auto;
+    }
+    .menu-sec{
+        flex-direction: column;
+    }
+    .email-phone{
+        flex-direction: column;
+    }
+    #banner-sec .container{
+        flex-direction: column-reverse;
+    }
+    .banner-content{
+        width: 100%;
+        flex-direction: column;
+    }
+    .banner-form{
+        width: 100%;
+    }
+    .banner_one-content h3{
+        color: #009adb;
+        font-size: 50px;
+    }
+    .social-icons{
+        justify-content: center;
+    }
+    #banner-sec{
+        padding-top: 250px;
+    }
+    .about-sec{
+        flex-direction: column;
+    }
+    .about-left,
+    .about-right{
+        width: 100%;
+    }
+    .about-video iframe{
+        height: auto;
+    }
+    .title-ranking h3{
+        line-height: 1em;
+    }
+    .card .icon-card{
+        left: 40%;
+    }
+}
+/* slider */
+.custom-img 
+{
+    width: 500px;
+    height: 500px;
+    animation: scroll 10s linear infinite;
+}
+.slide-track 
+{
+    width: 100%;
+    display: flex;
+    gap: 0.5em;
+    overflow: hidden;
+}  
+.slider 
+{
+    padding: 0em 1em;
+}
+  
+@keyframes scroll {
+    0% {transform: translateX(0);}
+    100% {transform: translatex(-220%)}
+  }
+
+  /* geetha code */
+.form-title
+{
+    color: #fff;
+    text-align: center;
 }
